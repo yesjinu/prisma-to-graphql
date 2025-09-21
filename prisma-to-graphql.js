@@ -217,7 +217,7 @@ if (require.main === module) {
   }
 
   const inputFile = args[0];
-  const outputFile = args[1] || 'apps/mobile/src/schema/models.graphql';
+  const outputFile = args[1] || 'schema.graphql';
 
   if (!fs.existsSync(inputFile)) {
     console.error(`❌ Input file not found: ${inputFile}`);
