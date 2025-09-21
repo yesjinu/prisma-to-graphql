@@ -8,10 +8,10 @@ This tool is designed to be used with `npx`, so no global installation is requir
 
 ## Usage
 
-Run the following command in your terminal:
+Run the following command in your terminal. Using `@latest` is recommended to ensure you are always running the most recent version and to avoid potential `npx` caching issues.
 
 ```bash
-npx @yesjinu/prisma-to-graphql p2g <path-to-your-schema.prisma> [output-file.graphql]
+npx @yesjinu/prisma-to-graphql@latest p2g <path-to-your-schema.prisma> [output-file.graphql]
 ```
 
 -   `<path-to-your-schema.prisma>`: (Required) The path to your input Prisma schema file.
