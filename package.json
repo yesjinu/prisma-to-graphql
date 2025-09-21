@@ -1,5 +1,5 @@
 {
-  "name": "prisma-to-graphql",
+  "name": "@yesjinu/prisma-to-graphql",
   "version": "1.0.0",
   "description": "Convert Prisma schema to GraphQL types",
   "main": "prisma-to-graphql.js",
