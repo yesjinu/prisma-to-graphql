@@ -4,7 +4,7 @@
   "description": "Convert Prisma schema to GraphQL types",
   "main": "prisma-to-graphql.js",
   "bin": {
-    "prisma-to-graphql": "./prisma-to-graphql.js"
+    "p2g": "./prisma-to-graphql.js"
   },
   "keywords": [
     "prisma",
