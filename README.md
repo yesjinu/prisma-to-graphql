@@ -17,6 +17,18 @@ npx @yesjinu/prisma-to-graphql <path-to-your-schema.prisma> [output-file.graphql
 -   `<path-to-your-schema.prisma>`: (Required) The path to your input Prisma schema file.
 -   `[output-file.graphql]`: (Optional) The path to the output GraphQL file. If not provided, it defaults to `schema.graphql`.
 
+## Contributing
+
+Contributions are welcome! To get started, clone the repository and install the dependencies.
+
+### Running Tests
+
+To run the test suite and verify your changes, use the following command:
+
+```bash
+npm test
+```
+
 ### Example
 
 Given a `schema.prisma` file like this:
