@@ -72,22 +72,37 @@ The tool will generate a GraphQL schema file:
 scalar DateTime
 scalar JSON
 
-type Post {
-  id: ID!
-  title: String!
-  content: String
-  published: Boolean!
-  author: User
-  authorId: ID!
-  createdAt: DateTime!
-}
-
-type User {
+type Author {
   id: ID!
   email: String!
   name: String
   posts: [Post!]
+  comments: [Comment!]
 }
+
+type Post {
+  id: ID!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  title: String!
+  content: String
+  published: Boolean!
+  authorId: ID!
+  author: Author
+  comments: [Comment!]
+}
+
+type Comment {
+  id: ID!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  text: String!
+  postId: ID!
+  authorId: ID!
+  post: Post
+  author: Author
+}
+
 ```
 
 ## License
